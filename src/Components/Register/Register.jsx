@@ -73,12 +73,12 @@ export default function Register() {
                 </div>
                 <div className="field my-3">
                     <label className="ml-3" htmlFor="">Password</label><br />
-                    <input onBlur={handleBlur} onChange={handleChange} value={values.password} type="text" name='password' className="w-full rounded-2xl py-1 mt-1 border-gray-300 border-2 px-3" />
+                    <input onBlur={handleBlur} onChange={handleChange} value={values.password} type="password" name='password' className="w-full rounded-2xl py-1 mt-1 border-gray-300 border-2 px-3" />
                     {touched.password&&errors.password&&<p className='text-red-400 text-sm'>{errors.password}</p>}
                 </div>
                 <div className="field my-3">
                     <label className="ml-3" htmlFor="">Repassword</label><br />
-                    <input onBlur={handleBlur} onChange={handleChange} value={values.rePassword} type="text" name='rePassword' className="w-full rounded-2xl py-1 mt-1 border-gray-300 border-2 px-3" />
+                    <input onBlur={handleBlur} onChange={handleChange} value={values.rePassword} type="password" name='rePassword' className="w-full rounded-2xl py-1 mt-1 border-gray-300 border-2 px-3" />
                     {touched.rePassword&&errors.rePassword&&<p className='text-red-400 text-sm'>{errors.rePassword}</p>}
                 </div>
                 <div className="btn w-4/5 m-auto text-center">
